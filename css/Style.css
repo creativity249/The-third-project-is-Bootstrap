@@ -21,8 +21,8 @@
    width: 80px;
    height: 80px;
    margin-top: 300px;
-   margin-left: auto; 
-   opacity: .7;  
+   margin-left: auto;    
+   opacity: .5;  
 }
 /* .......... باك راون للصور الإعلانيه في الموقع ....... */
 .BG{
@@ -331,11 +331,6 @@ border-radius: 150px;
 }
 .footer .box .line .info span {
   display: block;
-}
-.footer .footer-gallery img {
-  width: 78px;
-  border: 3px solid white;
-  margin: 2px;
 }
 .footer .copyright {
   padding: 25px 0;
