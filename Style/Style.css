@@ -1,0 +1,342 @@
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+*{
+   font-family: myFirstFont;
+}
+*{
+   margin : 0; 
+   padding: 0;
+   box-sizing: border-box;                                                                 
+}
+/* ................. راس الموقع ................. */
+.header{
+ height: 70px;
+ opacity: .7;
+}
+/* .............. الايقونات تواصل اجتماعب .......... */
+.social-icons{ 
+   width: 80px;
+   height: 80px;
+   margin-top: 300px;
+   margin-left: auto;    
+   opacity: .5;  
+}
+/* .......... باك راون للصور الإعلانيه في الموقع ....... */
+.BG{
+ background: #0000005f;
+ border-radius: 20px;
+}
+/* .............. عناوين السكشنات ................*/
+.h1-titel{
+ margin-bottom: 50px;
+ margin-top: 20px;
+}
+.h1-titel:hover {
+		animation-name: text-shadow-multicolor;
+		animation-duration: 2s;
+		animation-timing-function: ease;
+		animation-delay: 0.2s;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+	}
+	@keyframes text-shadow-multicolor {
+			
+		0% {
+			text-shadow:0 0px 15px #f0f;
+		}
+		33% {
+			text-shadow:0 0px 15px #0ff;
+		}
+		66% {
+			text-shadow:0 0px 10px #0f0;
+		}
+		100% {
+			text-shadow:0 0px 10px #ff0;
+		}
+	}
+/* ............ المسافه بين دفات الصور .............*/
+.Bg-img{
+ background:-webkit-radial-gradient(circle farthest-corner at center center, #ffffff 0%, #000000 100%);
+background:-o-radial-gradient(circle farthest-corner at center center, #ffffff 0%, #000000 100%);
+background:-moz-radial-gradient(circle farthest-corner at center center, #ffffff 0%, #000000 100%);
+background:radial-gradient(circle farthest-corner at center center, #ffffff 0%, #000000 100%);
+border:20px outset #00ffff;
+border-radius: 150px;
+}
+/* ........... هفر  دفات الصور ..................*/
+.card-hover::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    transition: 3s;
+    background: #2c1554cd;
+    opacity: 0;    
+}
+.card-hover:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    opacity: .3;
+    transition: 3s;
+}
+.card-hover{
+ margin: 25px 10px;
+}
+/* ............ نافذة دف الصوره ..................*/
+.BG-div{
+ height: 300px;
+ background: url("../img/sho.jpg")no-repeat center fixed;
+ background-size: cover;
+}
+/* ............ نافذة دف الصوره ..................*/
+.BG-div1{
+ height: 300px;
+ background: url("../img/sho1.jpg")no-repeat center fixed;
+ background-size: cover;
+}
+/* ............ نافذة دف الصوره ..................*/
+.BG-div2{
+ height: 300px;
+ background: url("../img/sho2.jpg")no-repeat center fixed;
+ background-size: cover;
+}
+/* ........... نافذة دف الصوره ..................*/
+.BG-div3{
+ height: 300px;
+ background: url("../img/sho3.jpg")no-repeat center fixed;
+ background-size: cover;
+}
+/* .......... رفع نافذة الـmodel ..................*/
+.modal-backdrop{
+ z-index: 0;
+} 
+.modal fade-backdrop{
+ z-index: 1;
+}  
+/* ................ التيم العامل  .................*/
+.card-tem{
+ margin: 30px 15px;
+}
+.img-bg ,img-bg2 ,img-bg3{
+ filter: blur(5px);
+}
+	.card-tem:hover{
+		animation-name: bounce-top;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: 1;
+		animation-direction: normal;
+		animation-fill-mode: none;
+	}
+	@keyframes bounce-top {			
+		0% {
+			transform:translateY(0);
+		}
+		25% {
+			transform:translateY(0);
+		}
+		40% {
+			transform:translateY(-24px);
+		}
+		55% {
+			transform:translateY(0);
+		}
+		65% {
+			transform:translateY(-12px);
+		}
+		75% {
+			transform:translateY(0);
+		}
+		82% {
+			transform:translateY(-6px);
+		}
+		87% {
+			transform:translateY(0);
+		}
+		93% {
+			transform:translateY(-4px);
+		}
+		100% {
+			transform:translateY(0);
+		}
+	}
+	/* ........ اخبار عن الدراجات الناريه ...............*/
+	.newstitel{
+	 margin-left: 20px;
+	}
+	.img-news{
+	 clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+	}
+	.img-news2{
+	 clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+	}
+	.News-c:hover{
+	 animation-name: wobble-hor-top;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: 1;
+		animation-direction: normal;
+		animation-fill-mode: none;
+	}
+	@keyframes wobble-hor-top {			
+		0% {
+			transform:translateX(0%);
+			transform-origin:50% 50%;
+		}
+		15% {
+			transform:translateX(-30px) rotate(6deg);
+		}
+		30% {
+			transform:translateX(15px) rotate(-6deg);
+		}
+		45% {
+			transform:translateX(-15px) rotate(3.6deg);
+		}
+		60% {
+			transform:translateX(9px) rotate(-2.4deg);
+		}
+		75% {
+			transform:translateX(-6px) rotate(1.2deg);
+		}
+		100% {
+			transform:translateX(0%);
+			transform-origin:50% 50%;
+		}
+	}
+	/* ......... تواصل معنا icon.tem ...............*/
+.icon-tem:hover{
+	animation-name: blur-out-expand;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: 1;
+		animation-direction: normal;
+		animation-fill-mode: none;
+	}
+	@keyframes blur-out-expand {
+			
+		0% {
+			filter:blur(0);
+		}
+		100% {
+			letter-spacing:1em;
+			filter:blur(12px) opacity(0%);
+		}
+	}
+	/* Start Footer */
+.footer {
+  background-color: #191919;
+  padding: 70px 0 0;
+}
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+.footer .box h3 {
+  color: white;
+  font-size: 50px;
+  margin: 0 0 20px;
+}
+.footer .box .social {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .footer .box .social {
+    justify-content: center;
+  }
+}
+.footer .box .social li {
+  margin-right: 10px;
+}
+.footer .box .social li a {
+  background-color: #313131;
+  color: #b9b9b9;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  transition: var(--main-transition);
+  text-decoration: none;
+}
+.footer .box .text {
+  line-height: 2;
+  color: #b9b9b9;
+}
+.footer .box .links li {
+  padding: 15px 0;
+  transition: var(--main-transition);
+}
+.footer .box .links li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+.footer .box .links li:hover {
+  padding-left: 10px;
+}
+.footer .box .links li:hover a {
+  color: white;
+}
+.footer .box .links li a {
+  color: #b9b9b9;
+  transition: var(--main-transition);
+}
+.footer .box .links li a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\F101";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--main-color);
+}
+.footer .box .line {
+  display: flex;
+  align-items: center;
+  color: #b9b9b9;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .footer .box .line {
+    flex-direction: column;
+  }
+}
+.footer .box .line i {
+  font-size: 25px;
+  color: var(--main-color);
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .footer .box .line i {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.footer .box .line .info {
+  line-height: 1.7;
+  flex: 1;
+}
+.footer .box .line .info span {
+  display: block;
+}
+.footer .copyright {
+  padding: 25px 0;
+  text-align: center;
+  color: white;
+  margin: 50px 0 0;
+  border-top: 1px solid #444;
+}
+/* End Footer */
